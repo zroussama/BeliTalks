@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>beliTalks: Connect, Chat, and Explore!</title>
+	<link rel="icon" type="image/png" href="img/favicon-32x32.png">
+	<link rel="stylesheet/less" type="text/css" href="style/beliTalks.less">
+	<script>
+		var less = {
+			env: "development"
+		};
+	</script>
+	<script src="js/lib/less-1.7.0.min.js"></script>
+</head>
+
+<body>
+
+	<section id="container">
+		<section id="chatWindow">
+			<section id="chatMain">
+				<div id="chatMainDiv"></div>
+			</section>
+
+			<div id="isTypingDiv" class="consoleChat">Stranger&nbsp;is&nbsp;typing...</div>
+
+			<section id="panelRow">
+
+				<input type=button value="Disconnect" id="disconnectButton" disabled>
+				<div id="chatAreaWrap">
+					<textarea  id="chatArea" disabled="disabled" placeholder=".."></textarea>
+				</div>
+			</section>
+
+			<section id="peopleOnlineSection">
+				<span id="peopleOnlineSpan">0</span> online
+			</section>
+		</section>
+
+		<section id="welcomeScreen">
+
+			<section id="startButtonDiv">
+				<div>
+					<div id="description">
+						BeliTalks lets you chat with strangers and meet new people in one-to-one conversations. <br>
+						Enjoy anonymous interactions and explore exciting new connections. <br> If all slots are busy,
+						just wait for someone to finish.
+					</div>
+					<br>
+					<input type=button value="Start chatting!" onclick="e.startChat();" class="button" id="startButton"
+						disabled>
+				</div>
+			</section>
+
+			<header>
+				<a href="./">
+					<div id="logo">
+						<br>
+						<img className="top" src="./img/logo_white.png" width="400" salt="">
+					</div>
+				</a>
+			</header>
+
+			<section id="badges">
+				<div className="center">
+					<br>
+					<!-- <button className="">
+						Try The New Look
+					</button>
+				 -->
+				</div>
+			</section>
+
+			<footer>
+				Stagic - &copy; 2024
+			</footer>
+
+		</section>
+	</section>
+
+	<audio id="alertSound">
+		<source src="media/alert.ogg" />
+		<source src="media/alert.mp3" />
+	</audio>
+
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="js/chat.js"></script>
+</body>
+
+</html>
