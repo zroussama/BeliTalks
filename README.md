@@ -1,4 +1,5 @@
 ﻿# BeliTalks
+![belitalks-high-resolution-logo](belitalks-high-resolution-logo.png)
 
 BeliTalks is a real-time random chat application where users can connect with strangers and chat in a simple and intuitive interface. The application uses Node.js and Socket.io for real-time communication and Express for serving static files.
 
@@ -21,14 +22,14 @@ To run BeliTalks locally, follow these steps:
 
 1. **Clone the repository:**
 
-   ```sh
-   git clone https://github.com/zroussam/BeliTalks.git
-   cd BeliTalks
+```sh
+git clone https://github.com/zroussam/BeliTalks.git
+cd BeliTalks
 
 2. **Install dependencies:**
 
 ```sh
- npm install express socket.io compression
+npm install express socket.io compression
 ```
 **Start the server:**
 
