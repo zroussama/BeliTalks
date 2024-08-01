@@ -1,5 +1,5 @@
 ﻿# BeliTalks
-![belitalks-high-resolution-logo](belitalks-high-resolution-logo.png)
+![belitalks-high-resolution-logo](/img/belitalks-high-resolution-logo.png)
 
 BeliTalks is a real-time random chat application where users can connect with strangers and chat in a simple and intuitive interface. The application uses Node.js and Socket.io for real-time communication and Express for serving static files.
 
