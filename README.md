@@ -25,6 +25,7 @@ To run BeliTalks locally, follow these steps:
 ```sh
 git clone https://github.com/zroussam/BeliTalks.git
 cd BeliTalks
+```
 
 2. **Install dependencies:**
 
